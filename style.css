@@ -65,7 +65,7 @@ section {
 .manual_items{
     position: relative;
     width: 352px;
-    height: 96px;
+    min-height: 96px;
     margin-bottom: 42px;
 
     display: flex;
@@ -77,6 +77,7 @@ section {
 
 .manual_title {
     width: 260px;
+    padding: 25px 0;
 
     font-family: 'Inter';
     font-size: 22px;
@@ -93,25 +94,20 @@ section {
     background-image: linear-gradient(55deg, var(--zoom_secondary) , var(--blue));
 }
 
-#Abnormal {
+/* #Abnormal {
     width: 352px;
     height: 130px;
-}
+} */
 
 @media only screen and (min-width: 768px) {
     .manual_items{
         width: 700px;
-        height: 96px;
+        min-height: 96px;
         margin-bottom: 42px;
     }
     
     .manual_title {
         width: 600px;
     }    
-
-    #Abnormal {
-        width: 700px;
-        height: 96px;
-    }
     
 }
