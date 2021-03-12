@@ -108,6 +108,25 @@ section {
     
     .manual_title {
         width: 600px;
+        padding: 25px 0;
+    }    
+    
+}
+
+@media only screen and (min-width: 1025px) {
+    .manual_items{
+        width: 1232px;
+        min-height: 96px;
+        margin-bottom: 42px;
+        justify-content: left;
+    }
+    
+    .manual_title {
+        width: 900px;
+        padding: 25px 90px;
+
+        font-size: 30px;
+        text-align: left;
     }    
     
 }
