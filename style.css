@@ -38,7 +38,7 @@ section {
 
 .hero_title {
     font-family: 'Calistoga';
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 400;
     letter-spacing: 1.5px;
     text-align: center;
@@ -128,7 +128,7 @@ section {
         width: 900px;
         padding: 25px 90px;
 
-        font-size: 30px;
+        font-size: 25px;
         text-align: left;
     }    
 
@@ -146,5 +146,4 @@ section {
         font-weight: 1000;
         color: var(--blue);
     }
-    
 }
