@@ -38,7 +38,7 @@ section {
 
 .hero_title {
     font-family: 'Calistoga';
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 400;
     letter-spacing: 1.5px;
     text-align: center;
@@ -64,7 +64,7 @@ section {
 
 .manual_items{
     position: relative;
-    width: 352px;
+    width: 313px;
     min-height: 96px;
     margin-bottom: 42px;
 
@@ -80,7 +80,7 @@ section {
     padding: 25px 0;
 
     font-family: 'Inter';
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 550;
     color: #F7F4EF;
     text-align: center;
@@ -98,16 +98,24 @@ section {
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 414px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
     .manual_items{
-        width: 700px;
+        width: 352px;
         min-height: 96px;
         margin-bottom: 42px;
     }
     
     .manual_title {
-        width: 600px;
-        padding: 25px 0;
+        width: 260px;
+        font-size: 22px;
     }    
     
     .manual_button {
@@ -116,7 +124,70 @@ section {
     
 }
 
+@media only screen and (min-width: 768px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    .manual_items{
+        width: 700px;
+        min-height: 96px;
+    }
+    
+    .manual_title {
+        width: 600px;
+        padding: 25px 0;
+        font-size: 25px;
+    }    
+    
+    .manual_button {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    .manual_items{
+        width: 962px;
+        min-height: 96px;
+        margin-bottom: 42px;
+        justify-content: center;
+    }
+    
+    .manual_title {
+        width: 900px;
+        padding: 25px 90px;
+
+        font-size: 28px;
+        text-align: center;
+    }    
+
+    .manual_button {
+       display: none;
+    }
+}
+
 @media only screen and (min-width: 1025px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
     .manual_items{
         width: 1232px;
         min-height: 96px;
