@@ -64,7 +64,7 @@ section {
 
 .manual_items{
     position: relative;
-    width: 313px;
+    width: 92%;
     min-height: 96px;
     margin-bottom: 42px;
 
@@ -108,7 +108,7 @@ section {
     }
 
     .manual_items{
-        width: 352px;
+        /* width: 352px; */
         min-height: 96px;
         margin-bottom: 42px;
     }
@@ -134,7 +134,7 @@ section {
     }
 
     .manual_items{
-        width: 700px;
+        /* width: 700px; */
         min-height: 96px;
     }
     
@@ -160,14 +160,14 @@ section {
     }
 
     .manual_items{
-        width: 962px;
+        /* width: 962px; */
         min-height: 96px;
         margin-bottom: 42px;
         justify-content: center;
     }
     
     .manual_title {
-        width: 900px;
+        /* width: 900px; */
         padding: 25px 90px;
 
         font-size: 28px;
@@ -189,7 +189,7 @@ section {
     }
 
     .manual_items{
-        width: 1232px;
+        /* width: 1232px; */
         min-height: 96px;
         margin-bottom: 42px;
         justify-content: left;
