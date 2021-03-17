@@ -30,7 +30,7 @@ section {
     height: 620px;
 
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     row-gap: 10px;
@@ -38,7 +38,7 @@ section {
 
 .hero_title {
     font-family: 'Calistoga';
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 400;
     letter-spacing: 1.5px;
     text-align: center;
@@ -64,8 +64,8 @@ section {
 
 .manual_items{
     position: relative;
-    width: 352px;
-    height: 96px;
+    width: 86%;
+    min-height: 96px;
     margin-bottom: 42px;
 
     display: flex;
@@ -77,10 +77,11 @@ section {
 
 .manual_title {
     width: 260px;
+    padding: 25px 0;
 
     font-family: 'Inter';
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 550;
     color: #F7F4EF;
     text-align: center;
 }
@@ -93,25 +94,157 @@ section {
     background-image: linear-gradient(55deg, var(--zoom_secondary) , var(--blue));
 }
 
-#Abnormal {
-    width: 352px;
-    height: 130px;
+.manual_button {
+    display: none;
+}
+
+@media only screen and (min-width: 375px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    
+    .manual_items{
+        width: 90%;
+    }
+
+    .manual_title {
+        width: 260px;
+        font-size: 22px;
+    }    
+    
+    .manual_button {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 414px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    
+    .manual_title {
+        width: 260px;
+        font-size: 22px;
+    }    
+    
+    .manual_button {
+        display: none;
+    }
+    
 }
 
 @media only screen and (min-width: 768px) {
-    .manual_items{
-        width: 700px;
-        height: 96px;
-        margin-bottom: 42px;
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
     }
     
     .manual_title {
         width: 600px;
+        padding: 25px 0;
+        font-size: 25px;
     }    
-
-    #Abnormal {
-        width: 700px;
-        height: 96px;
+    
+    .manual_button {
+        display: none;
     }
     
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    
+    .manual_title {
+        width: 900px;
+        padding: 25px 90px;
+
+        font-size: 28px;
+        text-align: center;
+    }    
+
+    .manual_button {
+       display: none;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .hero_title {
+        font-family: 'Calistoga';
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+
+    .manual_items{
+        justify-content: center;
+    }
+    
+    .manual_title {
+        width: 900px;
+        padding: 25px 0px;
+
+        font-size: 25px;
+        text-align: left;
+    }    
+
+    .manual_button {
+        width: 227px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10px;
+        background-color: var(--white);
+
+        font-size: 20px;
+        font-weight: 1000;
+        color: var(--blue);
+        cursor: pointer;
+    }
+
+    .manual_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .manual_button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: -3px;
+        right: -20px;
+        font-size: 25px;
+        transition: 0.5s;
+      }
+      
+      .manual_button:hover span {
+        padding-right: 25px;
+      }
+      
+      .manual_button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
 }
