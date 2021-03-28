@@ -25,14 +25,14 @@ section {
 }
 
 .hero {
-    padding: 0px 50px;
-    height: 500px;
+    padding: 0px 40px;
+    height: 450px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    row-gap: 20px;
+    row-gap: 40px;
 }
 
 .hero_title {
@@ -46,9 +46,9 @@ section {
 
 .hero_subtitle {
     font-family: 'Inter';
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 24px;
     text-align: left;
 }
 
@@ -66,7 +66,7 @@ section {
 .manual_items{
     position: relative;
     width: 85%;
-    min-height: 70px;
+    min-height: 65px;
     cursor: pointer;
     padding: 0 20px;
     /* box-shadow: 0px 3px 8px var(--fade_black); */
@@ -80,7 +80,7 @@ section {
 }
 
 .manual_items:hover {
-    box-shadow: 0px 0px 20px #00000040;
+    box-shadow: 0px 4px 12px 3px #00000060;
 }
 
 .manual_title {
@@ -91,15 +91,19 @@ section {
     font-weight: 450;
     color: var(--white);
     text-align: center;
-    text-shadow: 0px 0px 3px var(#00000010);
+    text-shadow: 0px 0px 3px var(#00000020);
 }
 
-.manual_items:nth-child(odd){
+.manual_items:nth-child(1n){
     background-image: linear-gradient(55deg, var(--zoom) , var(--zoom_secondary));
 }
 
-.manual_items:nth-child(even){
-    background-image: linear-gradient(55deg, var(--zoom_secondary) , var(--zoom));
+.manual_items:nth-child(2n){
+    background-image: linear-gradient(180deg, var(--zoom) , var(--zoom_secondary));
+}
+
+.manual_items:nth-child(3n){
+    background-image: linear-gradient(-55deg, var(--zoom) , var(--zoom_secondary));
 }
 
 .manual_button {
@@ -150,22 +154,17 @@ section {
     
 } */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 550px) {
+    .hero {
+        padding-left: 60px;
+    }
+
     .hero_title {
         font-size: 60px;   
     }
-
-    .hero_subtitle {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .manual_items {
-        min-height: 85px;
-    }
     
     .manual_title {
-        font-size: 22px;
+        font-size: 18px;
     }    
 }
 
@@ -193,26 +192,23 @@ section {
 
 @media only screen and (min-width: 1024px) {
     .hero {
-        align-items: center;
+        align-items: flex-start;
         row-gap: 30px;
-        padding: 0 90px;
+        padding: 0 100px;
     }
 
     .hero_title {
         font-size: 65px;
-        text-align: center;
     }
 
     .hero_subtitle {
-        font-size: 18px;
         line-height: 26px;
-        text-align: center;
     }
 
     .manual_items{
         justify-content: stretch;
         padding: 0px 30px 0px 45px;
-        min-height: 80px;
+        min-height: 70px;
         cursor: default;
     }
 
@@ -221,14 +217,15 @@ section {
     }
     
     .manual_title {
-        font-size: 22px;
+        font-size: 18px;
+        font-weight: 600;
         text-align: left;
         flex-grow: 1;
     }    
 
     .manual_button {
         width: 200px;
-        height: 45px;
+        height: 40px;
         border-radius: 10px;
         background-color: var(--white);
         border: 0;
