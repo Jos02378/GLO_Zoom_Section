@@ -45,8 +45,7 @@ section {
 }
 
 .hero_subtitle {
-    font-family: 'Inter';
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
@@ -162,6 +161,12 @@ section {
     .hero_title {
         font-size: 60px;   
     }
+
+    .hero_subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px;
+      }
     
     .manual_title {
         font-size: 18px;
